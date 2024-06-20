@@ -1,0 +1,146 @@
+.App {
+  text-align: center;
+}
+body{
+  background-color: #323337;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.news-card {
+  width: 350px;
+  height: 380px;
+  margin: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.news-card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.news-card img {
+  height: 150px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title, .card-text {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-body p.card-text {
+  flex-grow: 2;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.position-absolute {
+  right: 0;
+  top: 0;
+}
+
+.custom-read-more {
+  background-color: #007bff; 
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  width: fit-content; 
+  border: none;
+  font-weight: 600;
+}
+
+.custom-read-more:hover {
+  background-color: #0056b3; 
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+
+.pagination-controls {
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-controls button {
+  margin: 0 5px; 
+}
+
+@media (max-width: 1200px) {
+  .news-card {
+      width: 30%; 
+  }
+}
+
+@media (max-width: 992px) {
+  .news-card {
+      width: 45%; 
+  }
+}
+
+@media (max-width: 768px) {
+  .news-card {
+      width: 100%; 
+  }
+}
+
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+} 
